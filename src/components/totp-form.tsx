@@ -74,7 +74,7 @@ export function TOTPForm() {
   }, [update]);
 
   return (
-    <Card>
+    <Card className="w-full max-w-md">
       <CardHeader>
         <CardTitle>Authenticator</CardTitle>
         <CardDescription>Time-based OTP</CardDescription>
@@ -98,8 +98,8 @@ export function TOTPForm() {
                 )}
               />
 
-              <div className="grid grid-cols-12 gap-x-4">
-                <div className="col-span-6">
+              <div className="grid grid-cols-12 gap-4">
+                <div className="col-span-12 sm:col-span-6">
                   <FormField
                     control={form.control}
                     name="digits"
@@ -120,13 +120,13 @@ export function TOTPForm() {
                   />
                 </div>
 
-                <div className="col-span-6">
+                <div className="col-span-12 sm:col-span-6">
                   <FormField
                     control={form.control}
                     name="period"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Period</FormLabel>
+                        <FormLabel>Period (in seconds)</FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Enter period in seconds (1-3600)"
