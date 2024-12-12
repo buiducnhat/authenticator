@@ -76,7 +76,7 @@ export function TOTPForm() {
   return (
     <Card className="">
       <CardHeader>
-        <CardTitle>NBY Authenticator</CardTitle>
+        <CardTitle>Authenticator</CardTitle>
         <CardDescription>Time-based OTP</CardDescription>
       </CardHeader>
       <CardContent>

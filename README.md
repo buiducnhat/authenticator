@@ -1,4 +1,4 @@
-# NBY Authenticator
+# Authenticator
 
 This is a simple TOTP (Time-based One-Time Password)
 
